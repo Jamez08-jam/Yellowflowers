@@ -168,6 +168,64 @@
                 transform: translateX(0px) rotateZ(360deg);
             }
         }
+
+        /* Teléfonos pequeños (hasta 480px) */
+        @media (max-width: 480px) {
+            #start-screen h1 {
+                font-size: 2rem;
+                text-align: center;
+                padding: 0 20px;
+            }
+
+            #startButton {
+                font-size: 1.2rem;
+                padding: 12px 24px;
+            }
+
+            #mensaje {
+                top: 55%;
+                font-size: 5vw;
+                width: 90%;
+            }
+
+            #mensaje img {
+                max-width: 90%;
+            }
+        }
+
+        /* Teléfonos medianos a grandes (481px a 768px) */
+        @media (max-width: 768px) {
+            #start-screen h1 {
+                font-size: 2.5rem;
+                padding: 0 30px;
+                text-align: center;
+            }
+
+            #startButton {
+                font-size: 1.3rem;
+                padding: 14px 28px;
+            }
+
+            #mensaje {
+                font-size: 4.5vw;
+                width: 85%;
+            }
+
+            #mensaje img {
+                max-width: 100%;
+            }
+        }
+
+        /* Tablets en posición vertical (769px a 1024px) */
+        @media (max-width: 1024px) {
+            #mensaje {
+                font-size: 3.5vw;
+            }
+
+            #mensaje img {
+                max-width: 100%;
+            }
+        }
     </style>
 </head>
 
